@@ -1,0 +1,20 @@
+[package]
+name = "adif_parser"
+version = "0.1.0"
+edition = "2024"
+description = "A library for parsing ADIF (Amateur Data Interchange Format) files"
+license = "MIT"
+
+[dependencies]
+thiserror = "1.0"
+
+[dev-dependencies]
+tempfile = "3.0"
+
+[[bin]]
+name = "adif_parser"
+path = "src/main.rs"
+
+[lib]
+name = "adif_parser"
+path = "src/lib.rs"
